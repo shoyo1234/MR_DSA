@@ -1,5 +1,8 @@
 class Solution {
     public boolean isValid(String s) {
+        //All opening should have closing 
+        if (s.length() % 2 != 0) return false;
+
         //Stack to store open parantheses
         Stack<Character> stack = new Stack<>();
 
