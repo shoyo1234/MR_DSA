@@ -5,9 +5,7 @@ class Solution {
 
         // Map to store next greater element for each number in nums2
         Map<Integer, Integer> map = new HashMap<>();
-
-        // Stack to maintain decreasing order
-        Stack<Integer> stack = new Stack<>();
+        Deque<Integer> stack = new ArrayDeque<>();
 
         // Traverse nums2 from right to left
         for (int i = nums2.length - 1; i >= 0; i--) {
