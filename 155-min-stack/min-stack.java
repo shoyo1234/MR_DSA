@@ -11,6 +11,7 @@ class MinStack {
 
     public void push(int val) {
         stack.push(val);
+        //Check stack empty and the value is less than the min_stack top element
         if(min_Stack.isEmpty() || val <= min_Stack.peek()){
             min_Stack.push(val);
         }   
