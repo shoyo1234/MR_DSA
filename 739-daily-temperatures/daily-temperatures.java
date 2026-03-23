@@ -3,7 +3,7 @@ class Solution {
         int length = temperatures.length;
         int[] result_arr = new int[length];
         // Stack to store index of elements
-        Stack<Integer> stack = new Stack<>();
+        Deque<Integer> stack = new ArrayDeque<>();
 
         for(int i = length-1; i>=0; i--){
             // remove lesser or equal days
