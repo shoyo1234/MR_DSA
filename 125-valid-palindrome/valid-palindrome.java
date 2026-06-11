@@ -3,14 +3,14 @@ class Solution {
 
         String result = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
 
-        char[] string_arr = result.toCharArray();
+        
 
         boolean isPalindrome = true;
         int left = 0;
-        int right = string_arr.length - 1;
+        int right = result.length() - 1;
 
         while(left < right){
-            if(string_arr[left] != string_arr[right]){
+            if(result.charAt(left) != result.charAt(right)){
                 isPalindrome = false;
             }
             left++;
